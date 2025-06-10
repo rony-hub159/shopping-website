@@ -1,0 +1,317 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B6CBB6;  /* Light Green */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #754E1A;  /* Deep Brown */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #754E1A;  /* Deep Brown */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #CBA35C;  /* Yellow Ochre */
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B6CBB6;  /* Light Green */
+    border: 1px solid #CBA35C;  /* Yellow Ochre */
+    min-width: 150px;
+    z-index: 1000;
+    flex-direction: column;
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: #754E1A;  /* Deep Brown */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #CBA35C;  /* Yellow Ochre */
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #CBA35C;  /* Yellow Ochre */
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    width: 300px;
+}
+
+/* Auth and Cart Icons */
+.auth a,
+.cart a {
+    font-size: 18px;
+    color: #754E1A;  /* Deep Brown */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.auth a:hover,
+.cart a:hover {
+    color: #CBA35C;  /* Yellow Ochre */
+}
+
+.fa-user,
+.fa-bag-shopping {
+    font-size: 20px;
+}
+
+/* Small Header */
+.small-header {
+    text-align: center;
+    color: white;
+    background-color: #7A754A;  /* Olive Brown */
+    font-family: serif;
+    font-weight: bold;
+    height: 50px;
+    border-bottom: 2px solid #CBA35C;  /* Yellow Ochre */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #FFF8DC;  /* Light Cream */
+    font-weight: bold;
+    font-family: monospace, lucida;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-images {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-image {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.shop-button a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#products-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CBA35C;  /* Yellow Ochre */
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#products-button:hover {
+    background-color: black;
+    color: #CBA35C;  /* Yellow Ochre */
+    transition: all 0.3s ease;
+}
+
+/* Featured Products Section */
+.featured-div {
+    background-color: #F8F8F8;  /* Soft Light Neutral */
+    color: #7A754A;  /* Olive Brown */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#featured-title {
+    text-align: center;
+    padding: 20px;
+    color: #CF8E1B;  /* Dark Amber */
+    font-family: serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#products {
+    text-align: center;
+    padding: 20px;
+    color: #7A754A;  /* Olive Brown */
+    font-family: serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shop-button {
+    padding: 10px 20px;
+    background-color: #CF8E1B;  /* Dark Amber */
+    color: white;
+    border: 1px solid #CBA35C;  /* Yellow Ochre */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #CBA35C;  /* Yellow Ochre */
+    color: white;
+    border-color: #CF8E1B;  /* Dark Amber */
+}
+
+/* Additional Styling for Buttons Container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+    padding: 12px 30px;
+    background-color: #7A754A;  /* Olive Brown */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container button:hover {
+    background-color: #754E1A;  /* Deep Brown */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #7A754A;  /* Olive Brown */
+    color: white;
+    font-family: serif;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #CBA35C;  /* Yellow Ochre */
+}
+
+footer .socials a:hover {
+    color: #CF8E1B;  /* Dark Amber */
+}

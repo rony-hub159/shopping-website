@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #B6CBB6;  /* Light Green */
+}
+
+.main-container {
+    text-align: center;
+    background: #FFFFFF;  /* Pure White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #754E1A;  /* Deep Brown */
+    margin-bottom: 10px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+p {
+    color: #555;  /* Dark Gray */
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #754E1A;  /* Deep Brown */
+    color: white;
+}
+
+/* Google Login Button */
+.google-login {
+    background: #CF8E1B;  /* Dark Amber */
+    color: white;
+}
+
+.google-login:hover {
+    background: #A33427;  /* Darker Google Red */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;  /* Pure White */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #754E1A;  /* Deep Brown */
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #754E1A;  /* Deep Brown */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #CBA35C;  /* Yellow Ochre */
+    outline: none;
+}
+
+.form-container .btn {
+    width: 100%;
+    padding: 12px;
+    background: #754E1A;  /* Deep Brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-container .btn:hover {
+    background: #A33427;  /* Dark Amber */
+}
+
+#loginMessage {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #754E1A;  /* Deep Brown */
+}

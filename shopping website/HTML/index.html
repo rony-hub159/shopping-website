@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .nav-menu {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        
+        .nav-menu a:hover {
+            background-color: #555;
+            border-radius: 3px;
+        }
+        
+        .content {
+            padding: 20px 0;
+        }
+        
+        .dashboard-card {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+            <div class="user-info">
+                Welcome, Admin
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#users">Users</a>
+            <a href="#settings">Settings</a>
+            <a href="#reports">Reports</a>
+            <a href="#logout">Logout</a>
+        </div>
+
+        <div class="content">
+            <div class="dashboard-card">
+                <h2>Quick Statistics</h2>
+                <p>Total Users: 1,234</p>
+                <p>Active Sessions: 56</p>
+                <p>Today's Visitors: 789</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>New user registration - 5 minutes ago</li>
+                    <li>System update completed - 1 hour ago</li>
+                    <li>Backup performed - 3 hours ago</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>System Status</h2>
+                <p>Server Status: Online</p>
+                <p>Database Status: Connected</p>
+                <p>Last Maintenance: 2023-10-20</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
