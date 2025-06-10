@@ -1,0 +1,225 @@
+/* Reset and Base Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+
+/* Container Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header Styles */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header h1 {
+    color: #333;
+    margin: 0;
+}
+
+.user-info {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+
+/* Navigation Menu Styles */
+
+.nav-menu {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+
+/* Content Area Styles */
+
+.content {
+    padding: 20px 0;
+}
+
+
+/* Dashboard Card Styles */
+
+.dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+/* List Styles */
+
+.dashboard-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-card li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+}
+
+.dashboard-card li:last-child {
+    border-bottom: none;
+}
+
+
+/* Status Indicators */
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-online {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+.status-offline {
+    background-color: #f44336;
+    box-shadow: 0 0 5px #f44336;
+}
+
+
+/* Statistics Styles */
+
+.dashboard-card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .user-info {
+        margin-top: 10px;
+    }
+    .nav-menu {
+        text-align: center;
+    }
+    .nav-menu a {
+        display: block;
+        margin: 5px 0;
+    }
+    .dashboard-card {
+        padding: 15px;
+    }
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+
+/* Additional Utility Classes */
+
+.text-success {
+    color: #4CAF50;
+}
+
+.text-danger {
+    color: #f44336;
+}
+
+.text-warning {
+    color: #ff9800;
+}
+
+
+/* Hover Effects for Interactive Elements */
+
+.dashboard-card h2:hover {
+    color: #4CAF50;
+}
+
+.user-info:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
